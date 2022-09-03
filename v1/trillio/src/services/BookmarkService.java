@@ -4,37 +4,35 @@ import models.BookModel;
 import models.MovieModel;
 import models.WebLinkModel;
 
-public class BookMarkService {
+public class BookmarkService {
     // Singleton Pattern
-    private static BookMarkService instance = new BookMarkService();
+    private static BookmarkService instance = new BookmarkService();
 
-    private BookMarkService() {}
+    private BookmarkService() {}
 
-    public static BookMarkService getInstance() {
+    public static BookmarkService getInstance() {
         return instance;
     }
 
     // Business logic
 
-    public WebLinkModel createWebLink(long id, String title, String profileUrl, String url, String host) {
+    public WebLinkModel createWebLink(long id, String title, String url, String host) {
 
         WebLinkModel webLink = new WebLinkModel();
         webLink.setId(id);
         webLink.setTitle(title);
-        webLink.setProfileUrl(profileUrl);
         webLink.setUrl(url);
         webLink.setHost(host);
 
         return webLink;
     }
 
-    public BookModel createBook(long id, String title, String profileUrl, int publicationYear, String publisher,
+    public BookModel createBook(long id, String title, int publicationYear, String publisher,
                                 String[] authors, String genre, double amazonRating) {
 
         BookModel book = new BookModel();
         book.setId(id);
         book.setTitle(title);
-        book.setProfileUrl(profileUrl);
         book.setPublicationYear(publicationYear);
         book.setPublisher(publisher);
         book.setAuthors(authors);
