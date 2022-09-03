@@ -1,9 +1,6 @@
-package bos;
+package models;
 
-import models.BookmarkModel;
-import models.UserModel;
-
-public class UserBookMarkBO {
+public class UserBookmarkModel {
 
     private BookmarkModel bookmark;
     private UserModel user;
