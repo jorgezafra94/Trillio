@@ -1,10 +1,12 @@
 package trillio.services;
 
+import trillio.daos.UserDao;
 import trillio.models.User;
 
 public class UserService {
     // Singleton Pattern
     private static UserService instance = new UserService();
+    private UserDao userDao = new UserDao();
 
     private UserService() {}
 
@@ -26,5 +28,9 @@ public class UserService {
         user.setUserType(userType);
 
         return user;
+    }
+
+    public User[] getUsers() {
+        return userDao.getUsers();
     }
 }

@@ -1,12 +1,15 @@
 package trillio.services;
 
+import trillio.daos.BookmarkDao;
 import trillio.models.Book;
+import trillio.models.Bookmark;
 import trillio.models.Movie;
 import trillio.models.WebLink;
 
 public class BookmarkService {
     // Singleton Pattern
     private static BookmarkService instance = new BookmarkService();
+    private BookmarkDao bookmarkDao = new BookmarkDao();
 
     private BookmarkService() {}
 
@@ -56,5 +59,9 @@ public class BookmarkService {
         movie.setImdbRating(imdbRating);
 
         return movie;
+    }
+
+    public Bookmark[][] getBookmarks() {
+        return bookmarkDao.getBookmarks();
     }
 }
