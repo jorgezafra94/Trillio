@@ -4,9 +4,9 @@ import trillio.constants.BookGenre;
 import trillio.constants.Gender;
 import trillio.constants.MovieGenre;
 import trillio.constants.UserType;
-import trillio.models.UserBookmarkModel;
-import trillio.models.BookmarkModel;
-import trillio.models.UserModel;
+import trillio.models.UserBookmark;
+import trillio.models.Bookmark;
+import trillio.models.User;
 import trillio.services.BookmarkService;
 import trillio.services.UserService;
 
@@ -16,15 +16,15 @@ public class DataStore {
     private static final int BOOKMARK_COUNT_PER_TYPE = 5;
     private static final int USER_BOOKMARK_LIMIT = 5;
 
-    private static UserModel[] users = new UserModel[TOTAL_USER_COUNT];
-    private static BookmarkModel[][] bookmarks = new BookmarkModel[BOOKMARK_TYPES_COUNT][BOOKMARK_COUNT_PER_TYPE];
-    private static UserBookmarkModel[] userBookmarks = new UserBookmarkModel[TOTAL_USER_COUNT * USER_BOOKMARK_LIMIT];
+    private static User[] users = new User[TOTAL_USER_COUNT];
+    private static Bookmark[][] bookmarks = new Bookmark[BOOKMARK_TYPES_COUNT][BOOKMARK_COUNT_PER_TYPE];
+    private static UserBookmark[] userBookmarks = new UserBookmark[TOTAL_USER_COUNT * USER_BOOKMARK_LIMIT];
 
-    public static UserModel[] getUsers() {
+    public static User[] getUsers() {
         return users;
     }
 
-    public static BookmarkModel[][] getBookmarks() {
+    public static Bookmark[][] getBookmarks() {
         return bookmarks;
     }
 

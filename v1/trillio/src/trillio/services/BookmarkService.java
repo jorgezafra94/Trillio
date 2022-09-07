@@ -1,8 +1,8 @@
 package trillio.services;
 
-import trillio.models.BookModel;
-import trillio.models.MovieModel;
-import trillio.models.WebLinkModel;
+import trillio.models.Book;
+import trillio.models.Movie;
+import trillio.models.WebLink;
 
 public class BookmarkService {
     // Singleton Pattern
@@ -16,9 +16,9 @@ public class BookmarkService {
 
     // Business logic
 
-    public WebLinkModel createWebLink(long id, String title, String url, String host) {
+    public WebLink createWebLink(long id, String title, String url, String host) {
 
-        WebLinkModel webLink = new WebLinkModel();
+        WebLink webLink = new WebLink();
         webLink.setId(id);
         webLink.setTitle(title);
         webLink.setUrl(url);
@@ -27,10 +27,10 @@ public class BookmarkService {
         return webLink;
     }
 
-    public BookModel createBook(long id, String title, int publicationYear, String publisher,
-                                String[] authors, String genre, double amazonRating) {
+    public Book createBook(long id, String title, int publicationYear, String publisher,
+                           String[] authors, String genre, double amazonRating) {
 
-        BookModel book = new BookModel();
+        Book book = new Book();
         book.setId(id);
         book.setTitle(title);
         book.setPublicationYear(publicationYear);
@@ -42,10 +42,10 @@ public class BookmarkService {
         return book;
     }
 
-    public MovieModel createMovie(long id, String title, String profileUrl, int releaseYear, String[] cast,
-                                  String[] directors, String genre, double imdbRating) {
+    public Movie createMovie(long id, String title, String profileUrl, int releaseYear, String[] cast,
+                             String[] directors, String genre, double imdbRating) {
 
-        MovieModel movie = new MovieModel();
+        Movie movie = new Movie();
         movie.setId(id);
         movie.setTitle(title);
         movie.setProfileUrl(profileUrl);

@@ -1,6 +1,6 @@
 package trillio.services;
 
-import trillio.models.UserModel;
+import trillio.models.User;
 
 public class UserService {
     // Singleton Pattern
@@ -13,18 +13,18 @@ public class UserService {
     }
 
     // Business logic
-    public UserModel createUser(long id, String email, String password, String firstName,
-                                String lastName, int gender, String userType) {
+    public User createUser(long id, String email, String password, String firstName,
+                           String lastName, int gender, String userType) {
 
-        UserModel userModel = new UserModel();
-        userModel.setId(id);
-        userModel.setEmail(email);
-        userModel.setPassword(password);
-        userModel.setFirstName(firstName);
-        userModel.setLastName(lastName);
-        userModel.setGender(gender);
-        userModel.setUserType(userType);
+        User user = new User();
+        user.setId(id);
+        user.setEmail(email);
+        user.setPassword(password);
+        user.setFirstName(firstName);
+        user.setLastName(lastName);
+        user.setGender(gender);
+        user.setUserType(userType);
 
-        return userModel;
+        return user;
     }
 }

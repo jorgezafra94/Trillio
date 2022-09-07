@@ -1,6 +1,6 @@
 package trillio.models;
 
-public class BookmarkModel {
+public class Bookmark {
 
     private long id;
     private String title;

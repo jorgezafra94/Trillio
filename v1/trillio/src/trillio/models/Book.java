@@ -1,6 +1,6 @@
 package trillio.models;
 
-public class BookModel extends BookmarkModel {
+public class Book extends Bookmark {
 
     private int publicationYear;
     private String publisher;

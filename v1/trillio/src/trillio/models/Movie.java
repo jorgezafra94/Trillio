@@ -1,6 +1,6 @@
 package trillio.models;
 
-public class MovieModel extends BookmarkModel {
+public class Movie extends Bookmark {
 
     private int releaseYear;
     private String[] cast;

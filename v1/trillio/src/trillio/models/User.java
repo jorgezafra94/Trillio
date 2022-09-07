@@ -1,6 +1,6 @@
 package trillio.models;
 
-public class UserModel {
+public class User {
 
     private long id;
     private String email;

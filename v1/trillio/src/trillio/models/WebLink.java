@@ -1,6 +1,6 @@
 package trillio.models;
 
-public class WebLinkModel extends BookmarkModel {
+public class WebLink extends Bookmark {
 
     private String url;
     private String host;
