@@ -1,8 +1,8 @@
-package services;
+package trillio.services;
 
-import models.BookModel;
-import models.MovieModel;
-import models.WebLinkModel;
+import trillio.models.BookModel;
+import trillio.models.MovieModel;
+import trillio.models.WebLinkModel;
 
 public class BookmarkService {
     // Singleton Pattern

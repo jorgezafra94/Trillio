@@ -1,4 +1,4 @@
-package models;
+package trillio.models;
 
 public class MovieModel extends BookmarkModel {
 

@@ -1,4 +1,4 @@
-package constants;
+package trillio.constants;
 
 public class UserType {
 

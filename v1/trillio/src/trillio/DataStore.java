@@ -1,12 +1,14 @@
-import constants.BookGenre;
-import constants.Gender;
-import constants.MovieGenre;
-import constants.UserType;
-import models.UserBookmarkModel;
-import models.BookmarkModel;
-import models.UserModel;
-import services.BookmarkService;
-import services.UserService;
+package trillio;
+
+import trillio.constants.BookGenre;
+import trillio.constants.Gender;
+import trillio.constants.MovieGenre;
+import trillio.constants.UserType;
+import trillio.models.UserBookmarkModel;
+import trillio.models.BookmarkModel;
+import trillio.models.UserModel;
+import trillio.services.BookmarkService;
+import trillio.services.UserService;
 
 public class DataStore {
     private static final int TOTAL_USER_COUNT = 5;

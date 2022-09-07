@@ -1,6 +1,6 @@
-package services;
+package trillio.services;
 
-import models.UserModel;
+import trillio.models.UserModel;
 
 public class UserService {
     // Singleton Pattern
